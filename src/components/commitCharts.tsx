@@ -17,7 +17,8 @@ import {
   
   export default function CommitsChart({ username }: { username: string }) {
     const [data, setData] = useState<ContributionData[]>([]);
-    const token = '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'
+    const token = import.meta.env.VITE_GITHUB_TOKEN;
+
 
 
 
